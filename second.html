@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintain aspect ratio and cover the entire viewport */
+            z-index: -1; /* Set z-index to -1 so it's behind other content */
+        }
+
+        #content {
+            position: relative;
+            z-index: 1; /* Set z-index higher than the video to be on top */
+            padding: 20px;
+            color: white;
+        }
+
+        #taskbar {
+            background-color: black;
+            overflow: hidden;
+        }
+
+        #taskbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #taskbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #content {
+            padding: 20px;
+            margin-top: 50px; /* Adjust margin-top to avoid overlapping with the taskbar */
+        }
+
+        h1 {
+            font-family: 'Brush Script', sans-serif; /* Change font for h1 */
+            font-size: 64px;
+            color: whitesmoke; /* Change text color for h1 */
+            
+        }
+
+        #logo {
+            float: left;
+            margin-right: 20px;
+        }
+        .parallax-container {
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .parallax-section {
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .parallax-content {
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+            color: white;
+            font-size: 55px;
+        }
+
+        .parallax-1 { background-image: url('parallax1'); }
+        .parallax-2 {}
+
+        .my-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: cyan;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position:absolute;
+            top: 230px; /* Adjust top position as needed */
+            left: 300px; /* Adjust right position as needed */
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div id="taskbar">
+        <div id="logo">
+            <img src="pic2.png" alt="Your Logo" height="40">
+        </div>
+        <a href="#section1">About</a>
+        <a href="#section2">Media</a>
+        <a href="#section3">News</a>
+        <a href="purchase.html">Purchase</a>
+        <a href="#section5">Social Media</a>
+        <a href="#section6">Contact Us</a>
+        <!-- Add more sections as needed -->
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax-section parallax-1">
+            <div class="parallax-content">Explore Skater Republic</div>
+        </div>
+        <div class="parallax-section parallax-2">
+            <div class="parallax-content">Get regular updates</div>
+
+            <a href="button.html" class="my-button">Subscribe!</a>
+
+        </div>
+        <!-- Add more sections with different classes and images as needed -->
+    </div>
+    
+    <div id="content">
+        <!-- Your webpage content goes here -->
+        <h1>Explore Skater Republic</h1><hr>    
+        
+    </div>
+
+<video id="video-background" autoplay muted loop>
+    <source src="x2mate.com-Riders Republic_ Cinematic Premiere _ Ubisoft Forward 2020 _ Ubisoft [NA]-(1080p).mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<div id="content">
+    <!-- Your other webpage content goes here -->
+    
+</div>
+
+
+
+</body>
+</html>
