@@ -1,5 +1,5 @@
-# First
-In this assessment, a website is been created with the parallax feature.
+# Website
+In this project, a website is been created with the parallax feature.
 2 functional buttons:- "Subscribe" and "Purchase".
 Subscribe takes us to the web page to get information about the user.
 The purchase button takes the user to the page where they can fill a their details.
